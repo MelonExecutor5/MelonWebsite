@@ -1,0 +1,271 @@
+/* General reset and layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #d9f99d, #fbcfe8, #bbf7d0);
+    color: #065f46;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgba(253, 164, 175, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #064e3b;
+  }
+  
+  header p {
+    font-size: 1.3rem;
+    color: #047857;
+    margin-top: 0.5rem;
+  }
+  
+  /* Hero section */
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .download-btn {
+    background-color: #047857;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.5rem;
+    transition: background 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #065f46;
+  }
+  
+  /* Features */
+  .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  
+  .feature {
+    flex: 1;
+    background: rgba(255,255,255,0.8);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* Gallery */
+  .gallery {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .gallery .images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .gallery img {
+    width: 250px;
+    border-radius: 1rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* How it works */
+  .how-it-works {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.75);
+    border-radius: 1rem;
+  }
+  
+  .how-it-works ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  .how-it-works li {
+    margin: 0.75rem 0;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .quote {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* FAQ */
+  .faq {
+    margin-bottom: 3rem;
+  }
+  
+  .faq .q {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq strong {
+    color: #047857;
+  }
+  
+  /* Signup */
+  .signup {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .signup input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 250px;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .signup button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup button:hover {
+    background-color: #059669;
+  }
+  
+  /* Add-ons */
+  .why-melon,
+  .join-discord,
+  .devs,
+  .changelog,
+  .callout {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.75);
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  }
+  
+  .why-melon ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .why-melon li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .discord-btn {
+    background-color: #5865F2;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .discord-btn:hover {
+    background-color: #4752C4;
+  }
+  
+  .dev-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .dev-card {
+    background: rgba(255,255,255,0.9);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .callout {
+    text-align: center;
+    background: linear-gradient(to right, #34d399, #6ee7b7);
+    color: white;
+  }
+  
+  .callout .download-btn {
+    background-color: white;
+    color: #065f46;
+    margin-top: 1rem;
+  }
+  
+  .changelog ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 1rem auto 0;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.95rem;
+    color: #047857;
+    margin-top: 2rem;
+  }
+  
